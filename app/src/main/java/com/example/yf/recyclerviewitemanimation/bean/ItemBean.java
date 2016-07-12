@@ -1,4 +1,4 @@
-package bean;
+package com.example.yf.recyclerviewitemanimation.bean;
 
 import java.io.Serializable;
 
@@ -9,11 +9,11 @@ public class ItemBean implements Serializable {
 
     private boolean isChecked;
 
-    private boolean isChecked(){
+    public boolean isChecked(){
         return isChecked;
     }
 
-    private void setChecked(boolean checked){
+    public void setChecked(boolean checked){
         isChecked = checked;
     }
 }
