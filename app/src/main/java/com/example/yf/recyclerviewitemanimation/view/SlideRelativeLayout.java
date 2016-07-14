@@ -62,6 +62,7 @@ public class SlideRelativeLayout extends RelativeLayout{
 
     }
 
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public void closeAnimation(){
         ValueAnimator valueAnimator = new ValueAnimator();
         valueAnimator.setIntValues(0 , 1);
@@ -77,6 +78,7 @@ public class SlideRelativeLayout extends RelativeLayout{
         valueAnimator.start();
     }
 
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private void doAnimation(int dx , float fraction){
         mContentSlide.scrollTo(dx , 0);
         mCheckBox.setScaleX(fraction);
